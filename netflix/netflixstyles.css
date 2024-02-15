@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #111;
+    color: #fff;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #111;
+}
+
+.nav__item {
+    margin-left: 20px;
+}
+
+.language__drop__down {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.signin__button {
+    background-color: #e50914;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.signin__button:hover {
+    background-color: #ff0a16;
+}
+
+/* Hero section */
+.hero {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+}
+
+.hero__bg__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.5);
+}
+
+.hero__bg__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.hero__card {
+    max-width: 500px;
+    padding: 20px;
+    text-align: center;
+    z-index: 1;
+}
+
+.hero__title {
+    font-size: 48px;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.hero__subtitle {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.hero__description {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.email__form__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form__container {
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.email__input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 2px solid #fff;
+    background-color: transparent;
+    color: #fff;
+}
+
+.email__input:focus {
+    outline: none;
+    border-bottom: 2px solid #e50914;
+}
+
+.email__label {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    color: #fff;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.email__input:focus~.email__label,
+.email__input:valid~.email__label {
+    top: -10px;
+    font-size: 12px;
+    color: #e50914;
+}
+
+.primary__button {
+    background-color: #e50914;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.primary__button:hover {
+    background-color: #ff0a16;
+}
+
+/* Features section */
+.features__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.feature {
+    max-width: 400px;
+    background-color: #222;
+    margin: 20px;
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+}
+
+.feature__details {
+    padding: 20px;
+}
+
+.feature__title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.feature__sub__title {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.feature__image__container {
+    position: relative;
+}
+
+.feature__image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.feature__backgroud__video__container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.feature__backgroud__video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Footer */
+.footer__content__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    background-color: #000;
+}
+
+.footer__logo__container {
+    flex-basis: 100%;
+    margin-bottom: 20px;
+}
+
+.footer__logo {
+    width: 200px;
+    display: block;
+}
+
+.footer__links {
+    flex-basis: 25%;
+    text-align: center;
+}
+
+.footer__links li {
+    margin-bottom: 10px;
+}
+
+.footer__links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer__links a:hover {
+    text-decoration: underline;
+}
